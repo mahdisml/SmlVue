@@ -22,7 +22,7 @@ function setRed(){
 
 <!-- --------------------------------------------------- -->
 
-<style scoped>
+<style module>
 
 .div1{
   background-color: v-bind(color);
