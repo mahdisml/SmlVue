@@ -14,7 +14,7 @@ function setRed(){
 
 <template>
 
-<div class="div1">
+<div :class="$style.div1">
   <button v-on:click="setRed">Change Color !</button>
 </div>
 
