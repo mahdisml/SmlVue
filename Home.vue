@@ -8,16 +8,21 @@ function setRed(){
   color.value = "red"
 }
 
+const image = ref<string>(require("../assets/images/s1.jpg"))
+
 </script>
 
 <!-- --------------------------------------------------- -->
 
 <template>
-
-<div :class="$style.div1">
-  <button v-on:click="setRed">Change Color !</button>
+<div>
+  <div :class="$style.div1">
+    <button v-on:click="setRed">Change Color !</button>
+  </div>
+  <img src = "../assets/images/logo.png"/>
+  <img v-bind:src="image"/>
+  
 </div>
-
 </template>
 
 <!-- --------------------------------------------------- -->
